@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Johaimi ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffd6e7, #fff0f5);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .pollito {
+            position: absolute;
+            font-size: 45px;
+            animation: flotar 3s infinite ease-in-out;
+        }
+        .p1 { top: 10%; left: 10%; }
+        .p2 { top: 20%; right: 12%; animation-delay: 1s; }
+        .p3 { bottom: 15%; left: 15%; animation-delay: 2s; }
+        .p4 { bottom: 10%; right: 15%; animation-delay: .5s; }
+        @keyframes flotar {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        .carta {
+            background: white;
+            width: 85%;
+            max-width: 420px;
+            padding: 35px 25px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            z-index: 2;
+        }
+        h1 {
+            color: #ff4f81;
+            margin-bottom: 10px;
+        }
+        .corazon {
+            font-size: 55px;
+        }
+        #mensaje {
+            display: none;
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        button {
+            background: #ff4f81;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 30px;
+            font-size: 17px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: .3s;
+        }
+        button:hover {
+            transform: scale(1.08);
+            background: #ff2f69;
+        }
+        .firma {
+            color: #ff4f81;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="pollito p1">🐥</div>
+    <div class="pollito p2">🐤</div>
+    <div class="pollito p3">🐥</div>
+    <div class="pollito p4">🐤</div>
+    <div class="carta">
+        <div class="corazon">❤️</div>
+        <h1>Para Johaimi</h1>
+        <p>🐥 Tengo algo que decirte...</p>
+        <button onclick="mostrarMensaje()">
+            💌 Pulsa aquí
+        </button>
+        <div id="mensaje">
+            <p>
+                Johaimi ❤️
+            </p>
+            <p>
+                Quiero pedirte perdón de corazón.
+                Sé que hice algo que te molestó y de verdad
+                lamento haberte hecho sentir mal.
+            </p>
+            <p>
+                No quiero que un error mío arruine lo bonito
+                que tenemos. Tú eres una persona muy especial
+                para mí y quiero arreglar las cosas contigo.
+            </p>
+            <p>
+                Perdóname, mi amor. 🥺❤️
+            </p>
+            <p>
+                <span class="firma">
+                    Te quiero muchísimo. ❤️🐥
+                </span>
+            </p>
+        </div>
+    </div>
+    <script>
+        function mostrarMensaje() {
+            document.getElementById("mensaje").style.display = "block";
+        }
+    </script>
+</body>
+</html>
